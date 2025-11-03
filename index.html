@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mollie's Irish Pub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/iconpub.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/iconpub.png" alt="Mollie's Irish Pub" class="logo">
+        </header>
+        
+        <main class="main-content">
+            <div class="leprechaun-section">
+                <h2>Click the Leprechaun for some Irish magic!</h2>
+                <div class="leprechaun-container">
+                    <img src="assets/images/leprikon1.jpg" alt="Lucky Leprechaun" 
+                         class="leprechaun-img" id="leprechaun">
+                    <div class="audio-controls">
+                        <button id="playBtn" class="music-btn">🎵 Play Music</button>
+                        <span id="trackInfo">I'm shipping Up to Boston - Dropkick Murphys</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="action-buttons">
+                <a href="menu.html" class="action-btn">
+                    <span>🍺 Order Food & Drinks</span>
+                </a>
+                <a href="booking.html" class="action-btn">
+                    <span>📅 Book a Table</span>
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <audio id="pubAudio" preload="none">
+        <source src="assets/audio/Dropkick.opus" type="audio/ogg; codecs=opus">
+    </audio>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

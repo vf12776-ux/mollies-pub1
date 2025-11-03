@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2e0f 0%, #2d5016 50%, #1a2e0f 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.main-content {
+    text-align: center;
+}
+
+.leprechaun-section h2 {
+    color: #ffd700;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.leprechaun-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto 40px;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffd700;
+}
+
+.leprechaun-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #ffd700;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    object-fit: cover;
+}
+
+.leprechaun-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 35px rgba(255, 215, 0, 0.5);
+}
+
+.leprechaun-img.playing {
+    animation: leprechaunDance 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes leprechaunDance {
+    0% { transform: rotate(-10deg) scale(1.05); }
+    100% { transform: rotate(10deg) scale(1.05); }
+}
+
+.audio-controls {
+    margin-top: 20px;
+}
+
+.music-btn {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #2d5016;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.music-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+#trackInfo {
+    display: block;
+    font-style: italic;
+    color: #a8c97f;
+    font-size: 0.9em;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.action-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #8b0000, #a52a2a);
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-width: 300px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #a52a2a, #8b0000);
+}
+
+.action-btn span {
+    display: block;
+    font-size: 0.8em;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .logo {
+        max-width: 300px;
+    }
+    
+    .leprechaun-container {
+        padding: 20px;
+    }
+    
+    .leprechaun-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .action-btn {
+        min-width: 250px;
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+}
