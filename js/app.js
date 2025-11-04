@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleAudio() {
         if (isPlaying) {
             audio.pause();
-            playBtn.textContent = '🎵 Play Music';
+            playBtn.textContent = '🎵 Push';
             leprechaun.classList.remove('playing');
         } else {
             audio.play().catch(error => {
                 console.log('Audio play failed:', error);
             });
-            playBtn.textContent = '⏸️ Pause Music';
+            playBtn.textContent = '⏸️ Stop';
             leprechaun.classList.add('playing');
         }
         isPlaying = !isPlaying;
