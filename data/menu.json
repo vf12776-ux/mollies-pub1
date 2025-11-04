@@ -1,0 +1,13 @@
+{
+  "lastUpdated": "2024-11-04",
+  "drinks": [
+    {"name": "Guinness", "price": "€5.50", "available": true},
+    {"name": "Smithwick's", "price": "€5.00", "available": true},
+    {"name": "Jameson Whiskey", "price": "€6.00", "available": true}
+  ],
+  "food": [
+    {"name": "Irish Stew", "price": "€12.50", "available": true},
+    {"name": "Fish & Chips", "price": "€11.00", "available": true},
+    {"name": "Shepherd's Pie", "price": "€10.50", "available": false}
+  ]
+}

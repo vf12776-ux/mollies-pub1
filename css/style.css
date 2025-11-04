@@ -164,3 +164,71 @@ header {
         font-size: 1.1em;
     }
 }
+
+/* Стили для данных - ВЫНЕСЕНО ИЗ МЕДИА-ЗАПРОСА */
+.sold-out {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.update-info {
+    text-align: center;
+    color: #a8c97f;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.availability-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.available-now {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.next-available {
+    color: #FF9800;
+    font-weight: bold;
+}
+
+/* Стили для страниц меню и бронирования */
+.page-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-section, .booking-form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+.menu-section h2 {
+    color: #ffd700;
+    margin: 25px 0 15px 0;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.menu-section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+}
