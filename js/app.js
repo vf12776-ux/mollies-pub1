@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('pubAudio');
     let isPlaying = false;
 
-    // Управление аудио
     function toggleAudio() {
         if (isPlaying) {
             audio.pause();
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             audio.play().catch(error => {
                 console.log('Audio play failed:', error);
-                alert('Unable to play audio. Please check if the file exists.');
             });
             playBtn.textContent = '⏸️ Pause Music';
             leprechaun.classList.add('playing');
@@ -21,43 +19,23 @@ document.addEventListener('DOMContentLoaded', function() {
         isPlaying = !isPlaying;
     }
 
-    // События аудио
     leprechaun.addEventListener('click', toggleAudio);
     playBtn.addEventListener('click', toggleAudio);
-
-    audio.addEventListener('ended', function() {
-        // Автоповтор
-    });
-
-    audio.addEventListener('pause', function() {
-        if (isPlaying) {
-            isPlaying = false;
-            playBtn.textContent = '🎵 Play Music';
-            leprechaun.classList.remove('playing');
-        }
-    });
 });
 
-// Функции навигации - ПЕРЕНАПРАВЛЕНИЕ НА РЕАЛЬНЫЙ САЙТ
+// Функции навигации с полезной информацией
 function showMenu() {
-    window.open('https://molliespub.ru/menu', '_blank');
+    alert(`🍺 Mollie's Pub Menu\n\n📞 Заказы и бронирование: +7 (XXX) XXX-XX-XX\n📍 Адрес: [ваш адрес]\n🕒 Часы работы: Пн-Вс 12:00-23:00\n\nПосетите нас, чтобы увидеть полное меню ирландской кухни и напитков! 🍀`);
 }
 
 function showBooking() {
-    window.open('https://molliespub.ru/booking', '_blank');
+    alert(`📅 Бронирование столика\n\n📞 Телефон: +7 (XXX) XXX-XX-XX\n💬 WhatsApp: +7 (XXX) XXX-XX-XX\n✉️ Email: info@molliespub.ru\n🕒 Часы работы: Пн-Вс 12:00-23:00\n\nЗвоните для бронирования столиков и мероприятий! 🎉`);
 }
 
-// Функция возврата на главную (остаётся для навигации внутри приложения)
 function showHome() {
-    // Эта функция уже есть в index.html, оставляем пустой или можем убрать
+    // Для кнопки Back
 }
 
-function submitBooking() {
-    // Теперь не нужна, так как перенаправляем на реальную систему
-}
-
-// Делаем функции глобальными
 window.showMenu = showMenu;
 window.showBooking = showBooking;
 window.showHome = showHome;
-window.submitBooking = submitBooking;
