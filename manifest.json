@@ -1,0 +1,22 @@
+{
+  "name": "Mollie's Irish Pub",
+  "short_name": "Mollie's Pub",
+  "description": "Irish Pub with food, drinks and table booking",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2d5016",
+  "theme_color": "#2d5016",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/iconpub.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/iconpub.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
